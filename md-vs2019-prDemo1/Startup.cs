@@ -32,7 +32,8 @@ namespace md_vs2019_prDemo1
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Hello World!");
+                    await context.Response.WriteAsync("<h1>Hello World!</h1>");
+                    await context.Response.WriteAsync("<h2>Welcome Gouse</h2>");
                 });
             });
         }
